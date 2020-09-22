@@ -8,7 +8,7 @@ volt = []
 curr = []
 for a in range(1,27):
     
-    url_soc = "http://172.16.1.99:9090/api/v1/query_range?start=2020-06-"+str(a).zfill(2)+"T00:00:00.000Z&end=2020-06-"+str(a).zfill(2)+"T23:59:59.000Z&step=1m&query=ess_soc"
+    url_soc = "http://172.16.1.99:9090/api/v1/query_range?start=2020-09-"+str(a).zfill(2)+"T00:00:00.000Z&end=2020-09-"+str(a).zfill(2)+"T23:59:59.000Z&step=1m&query=ess_soc"
     payload = {}
     headers= {}
     response_soc = requests.request("GET", url_soc, headers=headers, data = payload)
@@ -20,7 +20,7 @@ for a in range(1,27):
     ####################        
         
     
-    url_current = "http://172.16.1.99:9090/api/v1/query_range?start=2020-06-"+str(a).zfill(2)+"T00:00:00.000Z&end=2020-06-"+str(a).zfill(2)+"T23:59:59.000Z&step=1m&query=ess_current"
+    url_current = "http://172.16.1.99:9090/api/v1/query_range?start=2020-09-"+str(a).zfill(2)+"T00:00:00.000Z&end=2020-09-"+str(a).zfill(2)+"T23:59:59.000Z&step=1m&query=ess_current"
     payload = {}
     headers= {}
     response_current = requests.request("GET", url_current, headers=headers, data = payload)
@@ -31,7 +31,7 @@ for a in range(1,27):
     ##############
         
         
-    url_voltage = "http://172.16.1.99:9090/api/v1/query_range?start=2020-06-"+str(a).zfill(2)+"T00:00:00.000Z&end=2020-06-"+str(a).zfill(2)+"T23:59:59.000Z&step=1m&query=ess_voltage"
+    url_voltage = "http://172.16.1.99:9090/api/v1/query_range?start=2020-09-"+str(a).zfill(2)+"T00:00:00.000Z&end=2020-09-"+str(a).zfill(2)+"T23:59:59.000Z&step=1m&query=ess_voltage"
     payload = {}
     headers= {}
     response_voltage = requests.request("GET", url_voltage, headers=headers, data = payload)
