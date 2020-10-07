@@ -48,4 +48,4 @@ for i in range(len(soc)):
     timest = datetime.utcfromtimestamp(soc[i][0]).strftime('%Y-%m-%d %H:%M:%S')
     soc[i][0] = timest
 df = pd.DataFrame(soc, columns = ['Time', 'SOC', 'Current', 'Voltage'])
-df.to_csv('UMASS.csv',index=False)
+df.to_csv('UMASS - 2020-09.csv',index=False)
